@@ -11,6 +11,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src='http://www.patrick-wied.at/static/heatmapjs/assets/js/heatmap.min.js'></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCACvCtn2EkgwJoz3QlmlfZmpRgCOInwWo&libraries=visualization&callback=initMap"></script>
+
 
     </head>
     <body>
@@ -32,6 +34,38 @@
         </nav>
         <!-- Page Content-->
         <section>
+            <canvas id="map_canvas" style ="height: 100%; margin: 0; padding: 0"></canvas>
+
+            <script>
+                var mapOptions = {
+                    zoom: 8,
+                    center: new google.maps.LatLng(45.1575501, -91.8474857),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    
+                var heatMapData = [
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857),
+                    new google.maps.LatLng(45.1575501, -91.8474857)
+                ];
+    
+                var heatmap = new google.maps.visualization.HeatmapLayer({
+                    data: heatMapData
+                });
+                heatmap.setOptions({radius: heatmap.get('10000')});
+                heatmap.setMap(map);
+            </script>
+
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-6">
@@ -40,9 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div id='heatMap' style="height: 742px">
-                <canvas width="1024" height="742" style="position:absolute; left: 0; top: 0"></canvas>
-              </div>
+            
         </section>
             
         <script> 
@@ -51,6 +83,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        
     </body>
+    
 </html>

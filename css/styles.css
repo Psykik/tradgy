@@ -64,6 +64,10 @@
   --bs-body-bg: #fff;
 }
 
+html { height: 100% !important}
+body { height: 100%; margin: 0; padding: 0 !important}
+#map_canvas { height: 100% !important}
+
 *,
 *::before,
 *::after {

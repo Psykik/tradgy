@@ -1,25 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Heatmap Test Code</title>
-<script src='http://www.patrick-wied.at/static/heatmapjs/assets/js/heatmap.min.js'></script>
-</head>
-<body>
-  <div id='heatMap' style="height: 742px">
-    <canvas width="1024" height="742" style="position:absolute; left: 0; top: 0"></canvas>
-  </div>
-</body>
-<script> 
-  var heatmapInstance = h337.create({
-    container: document.getElementById('heatMap')
-  });
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  var testData = {
-        min: 0,
-        max: 100,
-        data: [{x: 807, y: 583, value: 65}, {x: 597, y: 285, value: 51}, {x: 217, y: 449, value: 73}, {x: 377, y: 656, value: 58}, {x: 467, y: 509, value: 47}, {x: 487, y: 164, value: 46}, {x: 247, y: 194, value: 35}]
-  };
-  heatmapInstance.setData(testData);  
-</script>
+    <style>
+      #map {
+        height: 100%;
+      } 
+
+      /* 
+        * Optional: Makes the sample page fill the window. 
+        */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+
 </html>
+
+<script src="js/mapConfig.js"></script>

@@ -605,11 +605,13 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  /*background-color: #fff;*/
+  /*border: 1px solid #dee2e6;*/
+  padding-right: .75rem;
   border-radius: 0.25rem;
   max-width: 100%;
-  height: auto;
+  max-height:3em;
+  height: fit-content;
 }
 
 .figure {

@@ -7321,7 +7321,7 @@ textarea.form-control-lg {
 }
 
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 2.5em !important; /*spacing between menu bar and heading*/
 }
 
 .mt-auto {

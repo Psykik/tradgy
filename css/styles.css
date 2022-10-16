@@ -76,6 +76,15 @@
   }
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;

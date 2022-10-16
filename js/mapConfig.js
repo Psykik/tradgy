@@ -27,7 +27,7 @@ heatmapData = [
 { location: new google.maps.LatLng(34.09834,-118.32674), weight: 2},
 { location: new google.maps.LatLng(45.51984,-123.11066), weight: 2},
 { location: new google.maps.LatLng(34.19543,-79.76256), weight: 2},
-{ location: new google.maps.LatLng(27.63333,33.6), weight: 2},
+//{ location: new google.maps.LatLng(27.63333,33.6), weight: 2}, //THIS BLIP IS IN EGYPT
 { location: new google.maps.LatLng(37.33939,-121.89496), weight: 2},
 { location: new google.maps.LatLng(20.88953,-156.47432), weight: 2},
 { location: new google.maps.LatLng(42.3751,-71.10561), weight: 2},
@@ -36,7 +36,7 @@ heatmapData = [
 { location: new google.maps.LatLng(27.94752,-82.45843), weight: 2},
 { location: new google.maps.LatLng(36.15398,-95.99277), weight: 2},
 { location: new google.maps.LatLng(39.96118,-82.99879), weight: 2},
-{ location: new google.maps.LatLng(45.35444,-75.77306), weight: 1},
+//{ location: new google.maps.LatLng(45.35444,-75.77306), weight: 1}, THIS BLIP IS OTTAWA, CANADA
 { location: new google.maps.LatLng(47.81848,-120.26559), weight: 1},
 { location: new google.maps.LatLng(39.96097,-75.60804), weight: 1},
 { location: new google.maps.LatLng(40.64575,-79.91382), weight: 1},
@@ -54,7 +54,7 @@ heatmapData = [
 { location: new google.maps.LatLng(38.86832,-107.592), weight: 1},
 { location: new google.maps.LatLng(36.85293,-75.97799), weight: 1},
 { location: new google.maps.LatLng(40.044,-75.38769), weight: 1},
-{ location: new google.maps.LatLng(45.90236,-74.11299), weight: 1},
+//{ location: new google.maps.LatLng(45.90236,-74.11299), weight: 1}, THIS IS IN QUEBEC, CANADA
 { location: new google.maps.LatLng(38.62727,-90.19789), weight: 1},
 { location: new google.maps.LatLng(35.28275,-120.65962), weight: 1},
 { location: new google.maps.LatLng(45.16002,-121.16778), weight: 1},
@@ -72,7 +72,7 @@ heatmapData = [
 { location: new google.maps.LatLng(40.56233,-74.13986), weight: 1},
 { location: new google.maps.LatLng(34.03334,-118.03701), weight: 1},
 { location: new google.maps.LatLng(38.80484,-77.04692), weight: 1},
-{ location: new google.maps.LatLng(49.16638,-123.94003), weight: 1},
+//{ location: new google.maps.LatLng(49.16638,-123.94003), weight: 1}, VANCOUVER CANADA
 { location: new google.maps.LatLng(40.83242,-115.76312), weight: 1},
 { location: new google.maps.LatLng(28.74259,-100.31451), weight: 1},
 { location: new google.maps.LatLng(33.94621,-84.33465), weight: 1},

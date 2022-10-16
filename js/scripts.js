@@ -5,3 +5,12 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+
+//test code
+
+//const fs = require('fs');
+//let rawdata = fs.readFileSync('weightedDataFrame.json');
+//let points= JSON.parse(rawdata); /* elements are latitude, longitude, weight */
+
+//console.log(points.length);

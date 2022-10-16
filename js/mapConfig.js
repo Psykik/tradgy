@@ -21,6 +21,7 @@ map = new google.maps.Map(document.getElementById('map'),myMapOptions);
 var heatmap = new google.maps.visualization.HeatmapLayer({
 data: heatmapData,
 dissipating: true,
+radius: 50,
 map: map
 });
 }

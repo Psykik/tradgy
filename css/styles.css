@@ -76,6 +76,24 @@
   }
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  background-color: #333333;
+}
+
+p.copyright {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  line-height: 40px;
+  font-size: 0.7em;
+  text-align: center;
+  bottom:0;
+}
+
 .row {
   display: flex;
 }
@@ -11302,3 +11320,4 @@ body {
   /*background: url("https://dummyimage.com/1920x1080/dee2e6/6c757d.jpg") no-repeat center center fixed;*/ /*background*/
   background-size: cover;
 }
+

@@ -53,8 +53,8 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: Roboto;
-  --bs-font-monospace: Roboto;
+  --bs-font-sans-serif: Roboto.woff;
+  --bs-font-monospace: Roboto.woff;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1.3rem; /* menu font size */

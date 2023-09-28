@@ -1,0 +1,3 @@
+[submodule "scraper/twint"]
+	path = scraper/twint
+	url = https://github.com/mechabubba/twint.git
